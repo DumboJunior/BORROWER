@@ -1,0 +1,97 @@
+
+
+h1 {
+        text-align: center;
+        font-size: 76pt;
+        color: #FEFEFE;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        text-decoration: underline;
+        line-height: 0.7;
+    }
+
+
+
+
+.textFieldFirstName{
+        text-align: left;
+        font-size: 14pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+        
+    }
+.textFieldLastName{
+        text-align: left;
+        font-size: 14pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+    
+    }
+.textFieldAddress{
+        text-align: left;
+        font-size: 14pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+    
+    }
+.textFieldTelephone{
+        text-align: left;
+        font-size: 14pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+}
+.textFieldEmail{
+        text-align: left;
+        font-size: 14pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+}
+.textFieldPassword{
+        text-align: left;
+        font-size: 14pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+}
+.button{
+        text-align: left;
+        font-size: 10pt;
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 50px;
+        cursor: pointer;
+    
+        }
+input[type=text] {
+        width: 40%;
+        padding: 5px 5px;
+        margin: 8px 0;
+        box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: #188CAF;
+    background-image: url("vand.jpg");
+    background-size:cover;
+    
+}
+
