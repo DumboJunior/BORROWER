@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bd944224-3076-44d5-bc20-fdd841d82dcf" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Borrower.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/Borrower.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CreateProfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/CreateProfile.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/Style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styleCreateProfil.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/styleCreateProfil.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vand.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/client/vand.jpg" afterDir="false" />
+    <list default="true" id="bd944224-3076-44d5-bc20-fdd841d82dcf" name="Default Changelist" comment="Cleanup: Created folder for client and Persistence">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,8 +14,8 @@
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
       <list>
-        <option value="GlennD@me.com" />
         <option value="Saneroki" />
+        <option value="GlennD@me.com" />
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -61,7 +58,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1571736340372</updated>
-      <workItem from="1571736341606" duration="283000" />
+      <workItem from="1571736341606" duration="814000" />
     </task>
     <servers />
   </component>
