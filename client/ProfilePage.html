@@ -8,23 +8,31 @@
     </head>
     <body>
         <h1>Borrower</h1>
-        <h2>Manage your profile and items.</h2>
-        <div> 
-            <ul>
+        <h2>Manage your profile and items and create new items.</h2>
+
+        <div1 class=div1>
+            <ul class=createNewItem>
+            Create a new item:<br/> <input type="text" id="nameOfItem"><br/>
+            </ul>
             <ul class=butOne>
-                <button class=buttonCreate id="newItem">Create new item</button><br>
+                <button class=buttonCreate id="newItem">Save item</button><br>
             </ul>
+            </div1>
+                        
             <ul class=butTwo>
-                <button class=buttonChat id="chat">Chat</button><br>
+                <button class=buttonChat id="chat">Go to chat</button>
             </ul>
-                <ul class=itemHead>            
-                    This is your items:<br>
+            <ul class=butThree>
+                <button class=buttonEdit id="editProfile">Edit profile</button>
+            </ul>
+        
+            <ul class=itemHead>            
+                This is your items:<br>          
                     <textarea  class=list name="listOfItems" rows="10" cols="30">
                         List of items.
                     </textarea>
-                </ul>
-            
             </ul>
-        </div>
+
+
     </body>
 </html>
