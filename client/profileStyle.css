@@ -1,0 +1,116 @@
+
+
+h1 {
+        text-align: center;
+        font-size: 76pt;
+        color: #FEFEFE;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        text-decoration: underline;
+        line-height: 0.7;
+    }
+h2{
+        text-align: center;
+        margin-left: 50px;
+        font-size: 18pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        line-height: 2.8;
+}
+.butOne{
+        text-align: left;
+        margin-right: 300px;
+        margin-top: 10px;
+        margin-left: 10px;
+    
+}
+.butTwo{
+        float: right;
+        margin-right: 200px;
+}
+.butThree{
+        float: right;
+        margin-right: 200px;
+}
+
+.itemHead{
+        margin-left: 10px;
+        font-size: 18pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        line-height: 2.8;
+}
+
+.buttonCreate{
+
+        font-size: 16pt;
+        color: #021828;
+        font-family: "Arial", Times, sans-serif;        
+        cursor: pointer;
+        background-color: #E3F3F7;
+}
+.buttonChat{
+
+        font-size: 16pt;
+        color: #021828;
+        font-family: "Arial", Times, sans-serif;        
+        cursor: pointer;
+        background-color: #E3F3F7;
+
+
+
+}
+.buttonEdit{
+        font-size: 16pt;
+        color: #021828;
+        font-family: "Arial", Times, sans-serif;        
+        cursor: pointer;
+        background-color: #E3F3F7;
+    
+}
+.createNewItem{
+        text-align: left;
+        font-size: 16pt;
+        color: #E3F3F7;    
+        text-shadow: 
+        1px 1px 8px black;  
+        font-family: "Arial", Times, sans-serif;
+        margin-left: 10px;
+        
+    }
+
+.list{
+        
+        width: 300px;
+        height: 300px;
+}
+.div1{
+        text-align: left;
+        margin-right: 300px;
+        margin-top: 10px;
+
+}
+
+
+
+input[type=text] {
+        width: 30%;
+        padding: 5px 5px;
+        margin: 1px 0;
+        box-sizing: border-box;
+}
+
+
+
+body {
+        background-color: #188CAF;
+        background-image: url("vand.jpg");
+        background-size:cover;
+    
+}
+
