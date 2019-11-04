@@ -3,11 +3,13 @@ CREATE DATABASE `brrower`;
 USE `brrower`;
 
 CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL,
-  `name` varchar(50) NOT NULL,
-  `city` varchar(50) NOT NULL,
+  `firstname` varchar(50) NOT NULL,
+  `lastname` varchar(50) NOT NULL,
+  `address` varchar(50) NOT NULL,
   `phone` varchar(50) DEFAULT NULL,
-  PRIMARY KEY (`user_id`)
+  `email` varchar(50) NOT NULL,
+  `pssword` varchar(50) NOT NULL,
+  PRIMARY KEY (`email`)
 
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci; 
 
