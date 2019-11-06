@@ -1,16 +1,30 @@
 <!DOCTYPE html>
+<!--Med inspiration fra: https://www.w3schools.com/html/default.asp-->
 <html lang="en" dir="ltr">
 	<head>
-		<link rel="stylesheet" type="text/css" href="Style.css">
+		<link rel="stylesheet" type="text/css" href="ChatStyle.css">
 		<meta charset="utf-8">
 		<script src="ClientChat.js"></script>
 	</head>
-	<body>
-        From user: <input type="text" id="userid" value="Anonymous">
-		<button id="connect">Connect</button><br/>
-		To user: <input type="text" id="toUser" value=""><br/>
-        Message: <input type="text" id="input">
-        <button onclick="window.location.href='Borrower.html'" id="button">Send</button>
-        <hr>
+	<body >
+		<h1>Borrower</h1>
+		<h2>Here you can chat with fellow borrowers!</h2>
+		<div class="divs">
+			<ul class="fromUserField">
+				From user:<br/>  <input type="text" id="userid" value="Anonymous"> <br/>
+				
+			</ul>
+			
+			<ul class="toUserField">
+				To user:<br/>  <input type="text" id="toUser" value=""><br/>
+			</ul>
+			<ul class="messageField">
+				Message:<br/>  <input type="text" id="input"><br/>
+				
+			</ul>
+			<button class="button"  id="connect">Connect</button>
+			<button onclick="window.location.href='Borrower.html'" class="button"  id="button">Send</button>
+			
+        </div>
     </body>
 </html>
