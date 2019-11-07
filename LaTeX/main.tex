@@ -1,13 +1,82 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{subfiles}
+\usepackage{graphicx}
+\graphicspath{{./pics/}}
+\usepackage{geometry}
+\usepackage{url}
+\usepackage[font={small,it}]{caption}
+\usepackage{fancyhdr}
+\usepackage{soul}
+\usepackage{wrapfig}
+\usepackage{lastpage}
 
-\title{BORROWER}
-\author{Antonio Ivanoe Gonzales, Christian Skov Esbensen,\\
-Glenn Drescher, Jeppe Hannibal Niemann \\ \& Josephine Blaamann Petersen}
-\date{October 2019}
+
+\newcommand{\Lc}{\mathcal{C}}
+\newcommand{\Lo}{\mathcal{O}}
+\newcommand{\Ll}{\mathcal{L}}
+
+\def\mono#1{\texttt{#1}}
+\geometry{ 
+left = 25mm,
+top = 30mm,
+bottom = 30mm,
+right = 35mm}
+%
+\renewcommand{\baselinestretch}{1.5}
+%
+
+\linespread{1.5}
+{\fontfamily{cmr}\selectfont}
+
+
 
 \begin{document}
-\maketitle
-\section{Introduction}
+\thispagestyle{empty}
+\begingroup
+\setlength{\columnsep}{0pt}
+\endgroup
 
+\newcommand{\hRule}{\rule{\linewidth}{0.5mm}}
+
+\begin{center}
+\textsc{\huge Syddansk Universitet}\\[0.3cm]
+\textsc{\Large Distribution and Integration Technologies\\November 2019}\\[0.5cm]  
+\date{Maj 2019}
+\hRule \\[1cm]
+{\huge \bfseries \ul{BORROWER} }\\[0.75cm] 
+\hRule \\[1cm] 
+\linespread{1.5}
+\end{center}
+\title{BORROWER}
+\begin{center}
+ \LARGE{Gruppe 6:}
+\end{center}
+\begin{center}
+ \begin{tabular}{l  r}
+    Christian Skov Esbensen: & chesb17@student.sdu.dk\\
+    Antonio Ivanoe Gonzales: & angon13@student.sdu.dk\\
+    Jeppe Hannibal Niemann: & niema17@student.sdu.dk\\
+    Josephine Blaamann Petersen: & jobla16@student.sdu.dk
+\end{tabular}
+\end{center} 
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Distribution and Integration Technologies}
+\chead{ Gruppe 6}
+\rfoot{Side \thepage \hspace{1pt} af \pageref{LastPage}}
+
+
+\newpage
+\section{Introduktion}
+\subfile{Introduktion}
+\section{Funktionelle krav:}
+\subfile{Krav}
+\section{Systemets arkitektur}
+\subfile{Arkitektur}
+\section{Vejledning til eksekvering af systemet}
+\subfile{Vejledning}
+\section{Konklusion og videreudvikling}
+\subfile{Konklusion}
 \end{document}
