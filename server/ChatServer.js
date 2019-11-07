@@ -1,7 +1,7 @@
 //inspired by example 07-better-chat-server.js from lec06
 const {Server} = require('ws');
 let wsserver = new Server({port:8080,path:'/'});
-let latest = {time: Date.now(), msg: "No messages yet", userid:"Server"};
+let latest = {msg: "No messages yet", userid:"Server"};
 
 wsserver.on("connection",ws=>{
 		console.log("New client connected");
@@ -23,12 +23,12 @@ wsserver.on("connection",ws=>{
 				if(arrived.toUser != "")
 				// Send to specific user
 				{
-					latest = {time:Date.now(), msg:arrived.msg,userid:arrived.userid };
+					latest = {msg:arrived.msg,userid:arrived.userid };
 					console.log("Message arrived", msg);
 			/////// Inspired by https://stackoverflow.com/
 				// link to question https://bit.ly/2Ndnctd
 					wsserver.clients.forEach(function each(client) {
-						if(client.id == arrived.toUser)
+						if(client.id == arrived.toUser || client.id ==arrived.userid)
 						{
 							client.send(JSON.stringify(latest));
 						}
