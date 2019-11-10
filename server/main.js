@@ -30,7 +30,7 @@ websocksserver.on("connection", websock => {
 		let userData = JSON.parse(msg);
 		console.log(userData);
 
-		if(userData.) {
+		if(userData = msg) {
 			let sqlInsert = "INSERT INTO brrower.users (firstname, lastname, address, phone, email, pssword) VALUES ('" + userData.firstname +" ','"+ userData.lastname +" ','"+ userData.addr +" ','"+ userData.phone +" ','"+ userData.email +" ','"+ userData.password +" ');";
 	  	con.query(sqlInsert, function (err, result)
 		{
