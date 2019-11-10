@@ -8,6 +8,8 @@ window.addEventListener("load", () => {
 	let psswrd = document.getElementById("password");
 	let btn = document.getElementById("createProfil");
 	let fname = document.getElementById("firstname");
+	let li = document.getElementById("login")
+	
 
 	//let userData = {firstname: "", lastname:"", addr: "", phone:"", email:"",password:""};
 
@@ -20,4 +22,5 @@ window.addEventListener("load", () => {
 		websock.send(msg);
 		window.location.href='Borrower.html';
 	});
+
 });
