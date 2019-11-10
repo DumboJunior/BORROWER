@@ -11,7 +11,7 @@ let con = mysql.createConnection({
   	host: "localhost",
   	user: "root",
 	port: "3306",
-  	password: "Piraten Poul",
+  	password: "password",
 	insecureAuth: true
 });
 
@@ -35,4 +35,6 @@ websocksserver.on("connection", websock => {
   				console.log("1 record inserted");
 		});
 	});
+
+	
 });

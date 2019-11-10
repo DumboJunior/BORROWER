@@ -1,0 +1,22 @@
+{
+  "name": "borrower",
+  "version": "1.0.0",
+  "description": "borrower",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DumboJunior/BORROWER.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DumboJunior/BORROWER/issues"
+  },
+  "homepage": "https://github.com/DumboJunior/BORROWER#readme",
+  "dependencies": {
+    "ws": "^7.2.0"
+  }
+}

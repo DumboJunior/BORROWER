@@ -4,7 +4,7 @@ USE `brrower`;
 
 CREATE TABLE `users` (
   `firstname` varchar(50) NOT NULL,
-  `lastname` varchar(50) NOT NULL,
+  `latsname` varchar(50) NOT NULL,
   `address` varchar(50) NOT NULL,
   `phone` varchar(50) DEFAULT NULL,
   `email` varchar(50) NOT NULL,
@@ -18,6 +18,17 @@ CREATE TABLE `items` (
   `name` varchar(50) NOT NULL,
   `owner` varchar(50) NOT NULL, 
   `borrowed_by` varchar(50) NOT NULL,
+  `email` varchar(50) NOT NULL,
   PRIMARY KEY (`item_id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci; 
-  
+
+CREATE TABLE `borrower` (
+`email` varchar(50) NOT NULL,
+`name` varchar(50) NOT NULL,
+`item_id` varchar(50) NOT NULL, 
+`borrowed_by` varchar(50) NOT NULL,
+  PRIMARY KEY (`email`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci; 
+
+insert into users (firstname, latsname, address, phone, email, pssword)
+values ('mimi', 'hest', 'cykel', '1245512454', 'x@hotmail.com',  '1234'); 
