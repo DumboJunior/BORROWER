@@ -2,10 +2,17 @@
 <!--Med inspiration fra: https://www.w3schools.com/html/default.asp-->
 <html>
     <link rel="stylesheet" href="Style.css">
-    <head>        
+    <head>
         <script>
-
-        </script>
+		window.onload = () =>{
+			let usrname = document.getElementById("username");
+			let logBtn = document.getElementById("login");
+			logBtn.addEventListener("click", () =>{
+				localStorage.removeItem("userid");
+				localStorage.setItem("userid", usrname.value);
+			});
+		}
+		</script>
     </head>
     <body>
         <h1>Borrower</h1>
@@ -16,10 +23,10 @@
             </ul>
             <ul class=textFieldPassword>
             Password:<br/> <input type="text" id="password"><br/>
-            </ul>            
+            </ul>
             <button class=button id="login">Login</button>
             <button onclick = "window.location.href='CreateProfile.html'" class=button id="create">Create Profile</button>
-            
+
         </div>
     </body>
 </html>

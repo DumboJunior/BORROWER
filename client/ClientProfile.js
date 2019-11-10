@@ -8,6 +8,7 @@ window.addEventListener("load", () => {
 	let psswrd = document.getElementById("password");
 	let btn = document.getElementById("createProfil");
 	let fname = document.getElementById("firstname");
+	console.log(localStorage.getItem("userid"));
 
 	//let userData = {firstname: "", lastname:"", addr: "", phone:"", email:"",password:""};
 
