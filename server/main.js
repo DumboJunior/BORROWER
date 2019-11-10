@@ -4,7 +4,7 @@
 const {Server} = require('ws');
 let mysql = require('mysql');
 let websocksserver = new Server({port:8081,path:'/'});
-let createData = {firstname: "firstname", lastname: "lastname", address: "address",phone: "phone", email: "email",  password: "password"};
+let userData = {firstname: "firstname", lastname: "lastname", address: "address",phone: "phone", email: "email",  password: "password"};
 let logData;
 
 let con = mysql.createConnection({
@@ -17,9 +17,7 @@ let con = mysql.createConnection({
 });
 
 con.connect(function(err) {
-	if (err)
-    console.log ('error', err.message, err.stack)
-  else
+	if (err) throw err;
 	console.log("Connected!");
 });
 
@@ -29,23 +27,17 @@ websocksserver.on("connection", websock => {
 
 	websock.on("message", msg => {
 		console.log("message!");
-		console.log("sever" + msg);
-		let userData = JSON.parse(msg.text);
-        console.log(userData);	
+		let userData = JSON.parse(msg);
+		console.log(userData);
 
-		if(userData.type == "msg") {
-			console.log("hello");
+		if(userData.) {
 			let sqlInsert = "INSERT INTO brrower.users (firstname, lastname, address, phone, email, pssword) VALUES ('" + userData.firstname +" ','"+ userData.lastname +" ','"+ userData.addr +" ','"+ userData.phone +" ','"+ userData.email +" ','"+ userData.password +" ');";
 	  	con.query(sqlInsert, function (err, result)
 		{
-			if (err)
-			console.log ('error', err.message, err.stack)
-			else
-			console.log("SÅDAN")
-		
-			
+			if (err) throw err;
+  				console.log("1 record inserted");
 		});	
-		} else if(userData.type == "log") { 
+		} else{
 			console.log("kom nu")
 			let sqlExists = "SELECT password FROM users where email ='" + userData.username + "';"; 
 		
