@@ -17,7 +17,7 @@ window.addEventListener("load", () => {
 
 	btn.addEventListener("click", () => {
 		console.log("click");
-		let msg = JSON.stringify({firstname: firstname.value, lastname:lastname.value, addr: address.value, phone: telephone.value, email: email.value,password: password.value})
+		msg = JSON.stringify({type: "msg", firstname: firstname.value, lastname:lastname.value, addr: address.value, phone: telephone.value, email: email.value,password: password.value})
 		console.log("msg: " + msg)
 		websock.send(msg);
 		window.location.href='Borrower.html';

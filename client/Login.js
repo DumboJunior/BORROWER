@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
 
 	li.addEventListener("click", () => {
 		console.log("click")
-		let log = JSON.stringify({username:username.value, password:password.value})
+		let log = JSON.stringify({type: "log", username:username.value, password:password.value});
 		console.log("tjek")
 		websock.send("log " + log);
 		console.log("tjek 2")
