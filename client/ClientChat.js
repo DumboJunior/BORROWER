@@ -6,7 +6,11 @@ window.addEventListener("load", () => {
 	let button = document.getElementById("button");
 	let connect = document.getElementById("connect")
 
-	ws.open = ()=> {console.log("connected")};
+	ws.onopen = ()=>
+	{
+		console.log("connected");
+		ws.send(JSON.stringify({type:"connection", userid:localStorage.getItem("userid")}));
+	};
 	ws.onclose = () => console.log("disconnected", e.reason);
 	ws.onerror = () => console.log("Something went wrong: ",e);
 	ws.onmessage = event => {
@@ -16,11 +20,11 @@ window.addEventListener("load", () => {
 		div.appendChild(node);
 		document.body.appendChild(div);
 	};
-	connect.addEventListener("click", () => {
-		// only at initial connection
-		// setup userid for the server
-		ws.send(JSON.stringify({type:"connection", userid:userid.value}));
-	});
+	// connect.addEventListener("click", () => {
+	// 	// only at initial connection
+	// 	// setup userid for the server
+	// 	ws.send(JSON.stringify({type:"connection", userid:localStorage.getItem("userid")}));
+	// });
 	button.addEventListener("click", () => {
 		ws.send(JSON.stringify({type:"msg", msg:input.value, userid:userid.value, toUser:toUser.value}));
 		input.value="";
