@@ -5,8 +5,8 @@ const {Server} = require('ws');
 let mysql = require('mysql');
 let websocksserver = new Server({port:8081,path:'/'});
 let userData;
-const bcrypt = require('bcrypt');
-let saltRounds = 10;
+var bcrypt = require('bcrypt');
+const saltRounds = 10;
 
 let con = mysql.createConnection({
 	database: "brrower",
