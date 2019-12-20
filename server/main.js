@@ -34,15 +34,14 @@ websocksserver.on("connection", websock => {
 		bcrypt.genSalt(saltRounds, function(err, salt) {
 			bcrypt.hash(password, salt, function(err, hash) {
 				// Store hash in your password DB.
-			});
-	
-			
+						
 	  	let sqlInsert = "INSERT INTO brrower.users (firstname, lastname, address, phone, email, pssword) VALUES ('" + userData.firstname +" ','"+ userData.lastname +" ','"+ userData.addr +" ','"+ userData.phone +" ','"+ userData.email +" ','"+ userData.password +" ');";
 	  	con.query(sqlInsert, function (err, result)
 		{
 			if (err) throw err;
   				console.log("1 record inserted");
 		});
+	});
 	});
 });
 });
