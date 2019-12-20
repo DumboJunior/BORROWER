@@ -20,4 +20,3 @@ CREATE TABLE `items` (
   `borrowed_by` varchar(50) NOT NULL,
   PRIMARY KEY (`item_id`)
 )ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci; 
-  
