@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "C:\\Users\\Antonio\\Documents\\GitHub\\BORROWER"
+		}
+	],
+	"settings": {
+		"sqltools.connections": [
+			{
+				"database": "MySql",
+				"dialect": "MySQL",
+				"name": "brrower",
+				"password": "Really2323",
+				"port": 3306,
+				"server": "127.0.0.1",
+				"username": "root"
+			}
+		]
+	}
+}
